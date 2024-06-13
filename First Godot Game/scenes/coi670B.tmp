@@ -99,15 +99,12 @@ animations = [{
 radius = 4.0
 
 [node name="Coin" type="Area2D"]
-collision_mask = 2
 script = ExtResource("1_nde83")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hwql4")
 autoplay = "default"
-frame_progress = 0.4444
+frame_progress = 0.943136
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_88j8r")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
